@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-import { AppStyle } from "../component/Appstyle";
 export const Navbar = () => {
   const { theme, handleTheme } = useContext(ThemeContext);
   return (
@@ -16,12 +15,11 @@ export const Navbar = () => {
     >
       <button
         onClick={() => {
-          handleTheme();
+          return handleTheme();
         }}
       >
         {theme}
       </button>
-      <AppStyle>Hello</AppStyle>
     </nav>
   );
 };
