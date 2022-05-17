@@ -10,7 +10,7 @@ export const Card = (props) => {
   return (
     <>
       <div className="card">
-        <div className="visible-card" onClick={handleVisibility}>
+        <div className="visible-card">
           <div className="card-left">
             <img src={avtar} alt="" />
           </div>
@@ -22,7 +22,27 @@ export const Card = (props) => {
               <p> {email}</p>
             </div>
           </div>
+          <div className="card-show-button">
+            {visible ? (
+              <img
+                src="https://img.icons8.com/cute-clipart/344/details-pane.png"
+                width="40"
+                height="40"
+                alt=""
+                onClick={handleVisibility}
+              />
+            ) : (
+              <img
+                src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/344/external-hide-bull-emoji-vitaliy-gorbachev-blue-vitaly-gorbachev.png"
+                width="40"
+                height="40"
+                alt=""
+                onClick={handleVisibility}
+              />
+            )}
+          </div>
         </div>
+
         {visible ? (
           <div className="invisible-card1">
             {/* not visible */}
