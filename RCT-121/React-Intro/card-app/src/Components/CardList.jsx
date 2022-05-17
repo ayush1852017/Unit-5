@@ -1,5 +1,7 @@
+import React from "react";
+import { Card } from "./Card";
 import { useState } from "react";
-import "./Cards.css";
+import "./Card.css";
 const arr = [
   {
     id: 1,
@@ -42,49 +44,13 @@ const arr = [
     mobile: "78697965589",
   },
 ];
-export const Cards = () => {
+export const CardList = () => {
   const [user, setUsers] = useState(arr);
-  const [visible, setVisible] = useState(true);
-  const handleVisibility = () => {
-    setVisible(!visible ? true : false);
-    console.log(1);
-  };
   return (
-    <>
-      {user.map((e) => {
-        return (
-          <div className="card">
-            <div className="visible-card" onClick={handleVisibility}>
-              <div className="card-left">
-                <img src={e.avtar} alt="" />
-              </div>
-              <div className="card-right">
-                <div className="card-name">
-                  <h3>{e.name}</h3>
-                </div>
-                <div className="card-email">
-                  <p> {e.email}</p>
-                </div>
-              </div>
-            </div>
-            {visible ? (
-              <div className="invisible-card1">
-                {/* not visible */}
-                <>
-                  <p>Mobile No.</p> <p>{e.mobile}</p>
-                </>
-              </div>
-            ) : (
-              <div className="invisible-card2">
-                {/* not visible */}
-                <>
-                  <p>Mobile No.</p> <p>{e.mobile}</p>
-                </>
-              </div>
-            )}
-          </div>
-        );
-      })}
-    </>
+    <div className="card-list">
+      {user.map((e) => (
+        <Card avtar={e.avtar} name={e.name} email={e.email} phone={e.mobile} />
+      ))}
+    </div>
   );
 };

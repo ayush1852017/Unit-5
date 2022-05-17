@@ -1,3 +1,9 @@
+.card-list{
+    display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 100px;
+}
 .card{
     display: flex;
     padding: 0.5rem;
@@ -38,5 +44,14 @@
     display: flex;
     gap: 20px;
     padding: 0 1rem;
+    /* justify-content: space-between; */
     border-top: 0.1rem solid rgb(215, 209, 209);
+    align-items: center;
+    width: 95%;
+    color: rgb(132, 136, 139);
+}
+
+.invisible-card2 > img{
+    width: 5%;
+    height: 5%;
 }
