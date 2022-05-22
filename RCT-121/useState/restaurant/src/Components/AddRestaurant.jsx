@@ -1,14 +1,17 @@
+import axios from "axios";
 import React, { useState } from "react";
 // import data from "../data.json";
 export const AddRestaurant = () => {
   const [addDetail, setAddDetail] = useState({
     name: "",
-    categories: "",
-    payment_method: "",
-    total_votes: "",
-    food_img: "",
+    cuisine: "",
+    cost: "",
+    minPrice: "",
+    paymentMethods: "",
+    rating: "",
+    votes: "",
     reviews: "",
-    cost_for_one: "",
+    image: "",
   });
   const handleChange = (e) => {
     const value = e.target.value;
@@ -17,11 +20,19 @@ export const AddRestaurant = () => {
     console.log(e.target.value);
   };
   const handleSubmit = (e) => {
-    // e.preventDefault();
-    // // data.data = [...data.data, addDetail];
-    // data.data = data.data.push(addDetail);
-    // console.log(data.data);
+    e.preventDefault();
+    fetch("http://localhost:8080/data", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(addDetail),
+    })
+      // console.log(addDetail);
+      .then((res) => console.log())
+      .catch((err) => console.log(err));
   };
+  //25
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -35,28 +46,42 @@ export const AddRestaurant = () => {
 
         <input
           type="text"
-          name="categories"
+          name="cuisine"
           id=""
           placeholder="Category"
           onChange={handleChange}
         />
-        <select name="payment_method">
-          <option value="card">Card</option>
-          <option value="upi">Upi</option>
-          <option value="cash">Cash</option>
-        </select>
         <input
           type="text"
-          name="total_votes"
+          name="cost"
           id=""
-          placeholder="Votes"
+          placeholder="cost"
           onChange={handleChange}
         />
         <input
           type="text"
-          name="food_img"
+          name="minPrice"
           id=""
-          placeholder="FoodImg"
+          placeholder="minPrice"
+          onChange={handleChange}
+        />
+        <select name="payment_method">
+          <option value="card">Accepts card payments only</option>
+          <option value="upi">Accepts Upi payments only</option>
+          <option value="cash">Accepts cash payments only</option>
+        </select>
+        <input
+          type="text"
+          name="rating"
+          id=""
+          placeholder="Rating"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="votes"
+          id=""
+          placeholder="Votes"
           onChange={handleChange}
         />
         <input
@@ -68,9 +93,9 @@ export const AddRestaurant = () => {
         />
         <input
           type="text"
-          name="cost_for_one"
+          name="image"
           id=""
-          placeholder="cost"
+          placeholder="FoodImg"
           onChange={handleChange}
         />
         <input type="submit" value="submit" />

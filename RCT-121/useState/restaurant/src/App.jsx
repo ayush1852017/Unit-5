@@ -1,12 +1,12 @@
 import "./App.css";
 import { AddRestaurant } from "./Components/AddRestaurant";
-import { RestaurantDetails } from "./Components/RestaurantDetails";
+import { FetchDataComponent } from "./Components/FetchDataComponent";
 
 function App() {
   return (
     <div className="App">
       <AddRestaurant />
-      <RestaurantDetails />
+      <FetchDataComponent />
     </div>
   );
 }
