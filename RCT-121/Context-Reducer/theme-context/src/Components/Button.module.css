@@ -1,0 +1,13 @@
+.appbase{
+    padding: 1rem;
+    font-size: 1rem;
+
+}
+.appdark{
+    color: aliceblue;
+    background-color: #000;
+}
+.applight{
+    color: #000;
+    background-color:aliceblue;
+}

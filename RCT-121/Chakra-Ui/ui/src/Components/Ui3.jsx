@@ -12,7 +12,7 @@ export const Ui3 = () => {
             gap={5}
             height="500px"
           >
-            <GridItem sm={6} rowSpan={[1, 2]} colSpan={[5, 3]} bg="yellow" />
+            <GridItem md="" rowSpan={[1, 2]} colSpan={[5, 3]} bg="yellow" />
             <GridItem rowSpan={[1, 2]} colSpan={[5, 3]} bg="yellow" />
             <GridItem rowSpan={[1, 2]} colSpan={[5, 6]} bg="tomato" />
             <GridItem rowSpan={[1, 2]} colSpan={[5, 2]} bg="green" />
