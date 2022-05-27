@@ -1,18 +1,18 @@
 import React, { useEffect, useReducer } from "react";
 import axios from "axios";
 const initstate = {
-  data: null,
   loading: true,
   error: false,
+  data: null,
 };
-const fetchAction = {
+const githubAction = {
   fetch: "fetch",
   success: "success",
   failure: "failure",
 };
-const githubReducer = (state = initstate, action) => {
+const githubReducer = (state, action) => {
   switch (action.type) {
-    case fetchAction.data: {
+    case githubAction.fetch: {
       return {
         ...state,
         loading: true,
@@ -20,7 +20,7 @@ const githubReducer = (state = initstate, action) => {
         data: null,
       };
     }
-    case fetchAction.loading: {
+    case githubAction.success: {
       return {
         ...state,
         loading: false,
@@ -28,7 +28,7 @@ const githubReducer = (state = initstate, action) => {
         data: action.payload,
       };
     }
-    case fetchAction.error: {
+    case githubAction.failure: {
       return {
         ...state,
         loading: false,
@@ -44,33 +44,39 @@ export const GithubUser = () => {
   );
   useEffect(() => {
     dispatch({
-      type: githubReducer.fetch,
+      type: githubAction.fetch,
     });
     axios({
-      method: "get",
       url: "https://api.github.com/search/users",
+      method: "GET",
       params: {
         q: "masai",
       },
     })
       .then((res) =>
         dispatch({
-          type: githubReducer.success,
+          type: githubAction.success,
           payload: res.data,
         })
       )
       .catch((err) =>
         dispatch({
-          type: fetchAgithubReducerction.failure,
+          type: githubAction.failure,
         })
       );
   }, []);
+  console.log(data);
   return (
     <div>
       {loading && <div>loading</div>}
       {error && <div>error</div>}
-      {data?.map((item) => {
-        return <div key={item.id}>{item.login}</div>;
+      {data?.items.map((item) => {
+        return (
+          <div key={item.id}>
+            <img src={item.avatar_url} width="50" alt="" />
+            <div>{item.login}</div>
+          </div>
+        );
       })}
     </div>
   );
