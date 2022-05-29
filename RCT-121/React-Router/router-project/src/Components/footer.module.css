@@ -1,0 +1,77 @@
+.footer {
+    --footer-background: #f5f5f7;
+    --footer-border-color: #d2d2d7;
+    --footer-text-color: #6e6e73;
+    --footer-link-color: #424245;
+    --footer-directory-title-color: #1d1d1f;
+    --footer-directory-title-color-hover: #000;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background: var(--footer-background);
+    color: var(--footer-text-color);
+    min-width: 1024px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.footerNotesSection{
+    border-bottom: 1px solid #d2d2d7;
+    padding: 17px 0 11px;
+}
+.footerNotes{
+    margin: 0 auto;
+    max-width: 48%;
+    padding: 0 22px;
+    padding-left: max(22px,env(safe-area-inset-left));
+    padding-right: max(22px,env(safe-area-inset-right));
+}
+.footerNotes > section > ul{
+    list-style: none;
+    text-align: left;
+}
+.footerSpan{
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-align: inherit;
+}
+.footerNotesLink{
+    color:#424245;
+    text-decoration: none;
+}
+.footerNav{
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+}
+.footerNavLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    list-style:  none ;
+    color:  #fff ;
+    flex-wrap:  wrap ;
+    margin:  0 ;
+    justify-content:  center ;
+    text-align: left;
+}
+.footerNavLink {
+    text-decoration: none;
+    color: #000;
+
+}
+.footerNavLink > li {
+    font-size:.8rem;
+}

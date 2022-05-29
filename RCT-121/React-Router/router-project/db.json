@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "name": "Apple Studio Display",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK0U3_FV404?wid=1420&hei=930&fmt=png-alpha&.v=1645143356602",
+      "price": "1599"
+    },
+    {
+      "name": "Magic Mouse",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MMMQ3?wid=532&hei=582&fmt=png-alpha&.v=1645138486301",
+      "price": "49"
+    },
+    {
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6L3_FV402?wid=1420&hei=930&fmt=png-alpha&.v=1651856288917",
+      "price": "49"
+    },
+    {
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=532&hei=582&fmt=png-alpha&.v=1632861342000",
+      "price": "49"
+    },
+    {
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-silver-202011?wid=532&hei=582&fmt=png-alpha&.v=1604021221000",
+      "price": "49"
+    },
+    {
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    }
+  ]
+}

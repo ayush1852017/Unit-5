@@ -1,0 +1,41 @@
+.navbar{
+    background-color: #000;
+    padding: .7rem;
+    position: fixed !important;
+}
+.navbar2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    margin: 0;
+    width: 100%;
+    min-width: 1024px;
+    background: rgba(0,0,0,0.92);
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.navLinks{
+    display: flex;
+    gap: 2.7rem;
+    list-style:  none ;
+    color:  #fff ;
+    flex-wrap:  wrap ;
+    margin:  0 ;
+    justify-content:  center ;
+    align-items:  center ;
+
+}
+.navLink {
+    text-decoration: none;
+    color: #fff;
+
+}
+.navLink > li {
+    font-size:.8rem;
+}
