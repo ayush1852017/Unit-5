@@ -1,49 +1,240 @@
 {
   "products": [
     {
+      "id": 1,
       "name": "Apple Studio Display",
       "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK0U3_FV404?wid=1420&hei=930&fmt=png-alpha&.v=1645143356602",
       "price": "1599"
     },
     {
+      "id": 2,
       "name": "Magic Mouse",
       "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MMMQ3?wid=532&hei=582&fmt=png-alpha&.v=1645138486301",
       "price": "49"
     },
     {
+      "id": 3,
       "name": "Pride Edition Nike Sport Loop",
       "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
       "price": "49"
     },
     {
+      "id": 4,
       "name": "Pride Edition Nike Sport Loop",
       "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6L3_FV402?wid=1420&hei=930&fmt=png-alpha&.v=1651856288917",
       "price": "49"
     },
     {
+      "id": 5,
       "name": "Pride Edition Nike Sport Loop",
       "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=532&hei=582&fmt=png-alpha&.v=1632861342000",
       "price": "49"
     },
     {
+      "id": 6,
       "name": "Pride Edition Nike Sport Loop",
       "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-silver-202011?wid=532&hei=582&fmt=png-alpha&.v=1604021221000",
       "price": "49"
     },
     {
+      "id": 7,
       "name": "Pride Edition Nike Sport Loop",
       "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
       "price": "49"
     },
     {
+      "id": 8,
       "name": "Pride Edition Nike Sport Loop",
       "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
       "price": "49"
     },
     {
+      "id": 9,
       "name": "Pride Edition Nike Sport Loop",
       "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
       "price": "49"
+    },
+    {
+      "id": 10,
+      "name": "Apple Studio Display",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK0U3_FV404?wid=1420&hei=930&fmt=png-alpha&.v=1645143356602",
+      "price": "1599"
+    },
+    {
+      "id": 12,
+      "name": "Magic Mouse",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MMMQ3?wid=532&hei=582&fmt=png-alpha&.v=1645138486301",
+      "price": "49"
+    },
+    {
+      "id": 13,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "id": 14,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6L3_FV402?wid=1420&hei=930&fmt=png-alpha&.v=1651856288917",
+      "price": "49"
+    },
+    {
+      "id": 15,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=532&hei=582&fmt=png-alpha&.v=1632861342000",
+      "price": "49"
+    },
+    {
+      "id": 16,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-silver-202011?wid=532&hei=582&fmt=png-alpha&.v=1604021221000",
+      "price": "49"
+    },
+    {
+      "id": 17,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "id": 18,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "id": 19,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "id": 20,
+      "name": "Apple Studio Display",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK0U3_FV404?wid=1420&hei=930&fmt=png-alpha&.v=1645143356602",
+      "price": "1599"
+    },
+    {
+      "id": 22,
+      "name": "Magic Mouse",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MMMQ3?wid=532&hei=582&fmt=png-alpha&.v=1645138486301",
+      "price": "49"
+    },
+    {
+      "id": 23,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "id": 24,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6L3_FV402?wid=1420&hei=930&fmt=png-alpha&.v=1651856288917",
+      "price": "49"
+    },
+    {
+      "id": 25,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=532&hei=582&fmt=png-alpha&.v=1632861342000",
+      "price": "49"
+    },
+    {
+      "id": 26,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-silver-202011?wid=532&hei=582&fmt=png-alpha&.v=1604021221000",
+      "price": "49"
+    },
+    {
+      "id": 27,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "id": 28,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "id": 29,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "id": 31,
+      "name": "Apple Studio Display",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK0U3_FV404?wid=1420&hei=930&fmt=png-alpha&.v=1645143356602",
+      "price": "1599"
+    },
+    {
+      "id": 32,
+      "name": "Magic Mouse",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MMMQ3?wid=532&hei=582&fmt=png-alpha&.v=1645138486301",
+      "price": "49"
+    },
+    {
+      "id": 33,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "id": 34,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6L3_FV402?wid=1420&hei=930&fmt=png-alpha&.v=1651856288917",
+      "price": "49"
+    },
+    {
+      "id": 35,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=532&hei=582&fmt=png-alpha&.v=1632861342000",
+      "price": "49"
+    },
+    {
+      "id": 36,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-silver-202011?wid=532&hei=582&fmt=png-alpha&.v=1604021221000",
+      "price": "49"
+    },
+    {
+      "id": 37,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "id": 38,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    },
+    {
+      "id": 39,
+      "name": "Pride Edition Nike Sport Loop",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6N3_FV532?wid=532&hei=582&fmt=png-alpha&.v=1651860910311",
+      "price": "49"
+    }
+  ],
+  "cart": [
+    {
+      "name": "Apple Studio Display",
+      "price": "1599",
+      "quantity": 2,
+      "id": 1
+    },
+    {
+      "name": "Apple Studio Display",
+      "price": "1599",
+      "quantity": 2,
+      "id": 2
+    },
+    {
+      "name": "Apple Studio Display",
+      "price": "1599",
+      "quantity": 2,
+      "id": 3
     }
   ]
 }

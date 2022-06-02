@@ -56,7 +56,7 @@ export const Navbar = () => {
 
         <img src={search} alt="" width="17" height="17" />
 
-        <Link to="/cart" className={style.navLink}>
+        <Link to="/shoppingcart" className={style.navLink}>
           <img src={cart} alt="" width="20" height="20" />
         </Link>
       </ul>
