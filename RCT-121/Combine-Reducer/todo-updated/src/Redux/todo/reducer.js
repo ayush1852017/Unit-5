@@ -1,20 +1,21 @@
-import { Actions } from "./action"
+import { AuthActions } from "../Auth/action"
+import { ACTIONS } from "./action"
 
-const initialState= {
-    loading: false,
-    todo: [],
+const initState = {
+    laoding:false,
+    todo:[],
     error:false
 }
-export const reducer= (state=initialState, action)=>{
+export const todoReducer = (state=initState, action)=>{
     switch(action.type){
-        case Actions.GET_TODO_REQUEST:{
+        case ACTIONS.GET_TODO_REQUEST:{
             return{
                 ...state,
                 loading: true,
                 error:false
             } 
         }
-        case Actions.GET_TODO_SUCCESS:{
+        case ACTIONS.GET_TODO_SUCCESS:{
             return{
                 ...state,
                 todo:action.payload,
@@ -23,29 +24,29 @@ export const reducer= (state=initialState, action)=>{
             }
          }
         
-        case Actions.GET_TODO_FAILURE:{
+        case ACTIONS.GET_TODO_FAILURE:{
             return{
                 ...state,
                 loading:false,
                 error:true,
             } 
         }
-        case Actions.ADD_TODO_REQUEST:{
+        case ACTIONS.ADD_TODO_REQUEST:{
             return{
                 ...state,
                 loading: true,
                 error:false
             } 
         }
-        case Actions.ADD_TODO_SUCCESS:{
+        case ACTIONS.ADD_TODO_SUCCESS:{
             return{
                 ...state,
                 loading:false,
-                error:false
+                // error:false
             }
          }
         
-        case Actions.ADD_TODO_FAILURE:{
+        case ACTIONS.ADD_TODO_FAILURE:{
             return{
                 ...state,
                 loading:false,
@@ -55,5 +56,6 @@ export const reducer= (state=initialState, action)=>{
         default:{
             return state
         }
+        
     }
 }

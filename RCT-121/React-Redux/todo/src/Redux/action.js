@@ -7,6 +7,7 @@ export const Actions = {
     ADD_TODO_SUCCESS:"ADD_TODO_SUCCESS",
     ADD_TODO_FAILURE:"ADD_TODO_FAILURE"
 }
+//Action creator
 export const todoRequest = ()=>({
     type: Actions.GET_TODO_REQUEST,
 
