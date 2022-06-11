@@ -1,16 +1,16 @@
 import React from "react";
 import { Route, Routes } from "react-router";
-import { CharacterPage } from "../Components/CharacterPage";
-import { Characters } from "./Characters";
+import { ProductPage } from "../Components/ProductPage";
 import { Home } from "./Home";
+import { Products } from "./Products";
 
 export const AllRoutes = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/character" element={<Characters />} />
-        <Route path="/character/:id" element={<CharacterPage />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductPage />} />
       </Routes>
     </>
   );
