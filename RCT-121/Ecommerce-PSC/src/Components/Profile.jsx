@@ -8,6 +8,7 @@ import {
   Flex,
   Avatar,
 } from "@chakra-ui/react";
+import { Link as RouteLink } from "react-router-dom";
 export const Profile = () => {
   return (
     <Flex>
@@ -22,7 +23,10 @@ export const Profile = () => {
           <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
         </MenuButton>
         <MenuList>
-          <MenuItem>Cart</MenuItem>
+          <RouteLink to="/cart">
+            <MenuItem>Cart</MenuItem>
+          </RouteLink>
+          <MenuItem>Your Orders</MenuItem>
           <MenuItem>Login</MenuItem>
           <MenuItem>Logout</MenuItem>
         </MenuList>

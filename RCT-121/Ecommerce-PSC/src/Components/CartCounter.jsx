@@ -5,7 +5,7 @@ import { fetchCartData } from "../Redux/Cart/actions";
 
 export const CartCounter = () => {
   const cart = useSelector((state) => state?.cartStore?.cart);
-  console.log(cart && cart.length);
+  // console.log(cart && cart.length);
   const dispatch = useDispatch();
 
   useEffect(() => {
