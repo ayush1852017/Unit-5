@@ -17,7 +17,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Profile } from "../Components/Profile";
 import { BsCart3 } from "react-icons/bs";
 import { CartCounter } from "../Components/CartCounter";
-
+import { Link as RouterLink } from "react-router-dom";
 export const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
 
@@ -49,13 +49,15 @@ export const Navbar = () => {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          >
-            Logo
-          </Text>
+          <RouterLink to="/">
+            <Text
+              textAlign={useBreakpointValue({ base: "center", md: "left" })}
+              fontFamily={"heading"}
+              color={useColorModeValue("gray.800", "white")}
+            >
+              Logo
+            </Text>
+          </RouterLink>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}></Flex>
         </Flex>
@@ -66,10 +68,12 @@ export const Navbar = () => {
           direction={"row"}
           spacing={6}
         >
-          <Box position="relative" padding="0 0.5rem 0 0">
-            <CartCounter />
-            <Icon as={BsCart3} boxSize="2rem" />
-          </Box>
+          <RouterLink to="/cart">
+            <Box position="relative" padding="0 0.5rem 0 0">
+              <CartCounter />
+              <Icon as={BsCart3} boxSize="2rem" />
+            </Box>
+          </RouterLink>
           <Profile />
         </Stack>
       </Flex>

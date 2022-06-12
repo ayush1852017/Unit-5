@@ -18,13 +18,15 @@ import { MdLocalShipping } from "react-icons/md";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
-import { addCartData, getItemData } from "../Redux/actions";
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
+import { getItemData } from "../Redux/Products/action";
+import { addCartData } from "../Redux/Cart/actions";
 export const ProductPage = () => {
-  const data = useSelector((state) => state?.ecommerceStore?.data);
-  const loading = useSelector((state) => state?.ecommerceStore?.loading);
-  const error = useSelector((state) => state?.ecommerceStore?.error);
+  const data = useSelector((state) => state?.productStore?.data);
+  const loading = useSelector((state) => state?.productStore?.loading);
+  const error = useSelector((state) => state?.productStore?.error);
   const params = useParams();
+  console.log(data);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getItemData({ dispatch, params }));

@@ -1,10 +1,10 @@
 import { Box } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCartData } from "../Redux/actions";
+import { fetchCartData } from "../Redux/Cart/actions";
 
 export const CartCounter = () => {
-  const cart = useSelector((state) => state?.ecommerceStore?.cart);
+  const cart = useSelector((state) => state?.cartStore?.cart);
   console.log(cart && cart.length);
   const dispatch = useDispatch();
 

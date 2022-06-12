@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { getAllData } from "../Redux/actions";
 import style from "../Components/app.module.css";
 import {
   Box,
@@ -14,12 +13,13 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { FilterComponent } from "../Components/FilterComponent";
+import { getAllData } from "../Redux/Products/action";
 
 export const Products = () => {
   const [page, setPage] = useState(1);
-  const data = useSelector((state) => state?.ecommerceStore.data);
-  const loading = useSelector((state) => state?.ecommerceStore.loading);
-  const error = useSelector((state) => state?.ecommerceStore.error);
+  const data = useSelector((state) => state?.productStore.data);
+  const loading = useSelector((state) => state?.productStore.loading);
+  const error = useSelector((state) => state?.productStore.error);
   // const [sort, setSort] = useState("ASC");
   const dispatch = useDispatch();
   useEffect(() => {
